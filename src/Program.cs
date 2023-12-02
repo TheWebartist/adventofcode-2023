@@ -5,9 +5,7 @@ Console.WriteLine("-------------------------------------------------------------
 Console.WriteLine("----------------------- Advent of Code 2023 with .NET 8 'n love -----------------------");
 Console.WriteLine("---------------------------------------------------------------------------------------");
 
-List<IPuzzleSolver> solvedPuzzles = new List<IPuzzleSolver>();
-
-solvedPuzzles.Add(new Day01PuzzleSolver());
+List<IPuzzleSolver> solvedPuzzles = [new Day01PuzzleSolver(), new Day02PuzzleSolver()];
 
 foreach (var solver in solvedPuzzles)
 {
