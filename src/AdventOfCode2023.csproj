@@ -10,6 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Inputs\03\input" />
+    <None Remove="Inputs\03\sample-part-1" />
     <None Remove="Inputs\02\input" />
     <None Remove="Inputs\02\sample-part-1" />
     <None Remove="Inputs\02\sample-part-2" />
@@ -19,6 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Inputs\03\input">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\03\sample-part-1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Inputs\02\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
