@@ -10,6 +10,8 @@
 
         internal const string INPUT_FILE_NAME = "input";
 
+        internal const string SAMPLE_FILE_NAME = "sample";
+
         internal const string SAMPLE_PART_ONE_FILE_NAME = "sample-part-1";
 
         internal const string SAMPLE_PART_TWO_FILE_NAME = "sample-part-2";

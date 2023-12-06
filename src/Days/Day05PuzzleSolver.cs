@@ -20,15 +20,10 @@
             => $"What's this fucking Almanach ? Obviously, that's the lowest location : {await GetLowestLocationFromAlmanachAsync(PuzzleInputsService.INPUT_FILE_NAME)}.";
 
         public async Task<string> SolveSecondPuzzlePartAsync()
-            => $"Hey choom, my solution isn't good and too slow with full input entry so this is the solution of the example of part 2 : {await GetLowestLocationFromMoreComplexAlmanachAsync(PuzzleInputsService.SAMPLE_PART_ONE_FILE_NAME)}";
-
-        //public async Task<string> SolveSecondPuzzlePartAsync()
-        //{
-        //    Stopwatch sw = Stopwatch.StartNew();
-        //    var result = await GetLowestLocationFromMoreComplexAlmanachAsync(PuzzleInputsService.INPUT_FILE_NAME);
-        //    sw.Stop();
-        //    return $"Hey choom, they have added some rules to seeds logix of almanach, but I've founds the result... the lowest location is {result}. result founded in {sw.Elapsed.Minutes}m {sw.Elapsed.Seconds}s and {sw.Elapsed.Milliseconds}ms.";
-        //}
+        {
+            var solveResult = await StopwatchUtils.GetTaskResultWithExecutionTimeAsync(GetLowestLocationFromMoreComplexAlmanachAsync(PuzzleInputsService.SAMPLE_FILE_NAME));
+            return $"Hey choom, my solution isn't good and too slow with full input entry so this is the solution of the example of part 2 : {solveResult.Item1} (executed in {solveResult.Item2}).";
+        }
 
         #endregion IPuzzleSolver members
 

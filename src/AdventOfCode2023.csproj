@@ -11,7 +11,9 @@
 
   <ItemGroup>
     <None Remove="Inputs\05\input" />
-    <None Remove="Inputs\05\sample-part-1" />
+    <None Remove="Inputs\05\sample" />
+    <None Remove="Inputs\06\input" />
+    <None Remove="Inputs\06\sample" />
     <None Remove="Inputs\04\input" />
     <None Remove="Inputs\04\sample-part-1" />
     <None Remove="Inputs\03\input" />
@@ -28,7 +30,13 @@
     <Content Include="Inputs\05\input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Inputs\05\sample-part-1">
+    <Content Include="Inputs\05\sample">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\06\input">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\06\sample">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Inputs\04\input">
