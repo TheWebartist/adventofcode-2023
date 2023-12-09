@@ -156,7 +156,7 @@
                     return jokerCount == 2 ? HandType.FourOfAKind : jokerCount == 1 ? HandType.FullHouse : HandType.TwoPairs;
 
                 case HandType.ThreeOfAKind:
-                    return jokerCount == 3 || jokerCount == 1 ? HandType.FourOfAKind : HandType.ThreeOfAKind;
+                    return jokerCount > 0 ? HandType.FourOfAKind : HandType.ThreeOfAKind;
 
                 case HandType.FullHouse:
                     return (jokerCount == 2 || jokerCount == 3) ? HandType.FiveOfAKind : HandType.FullHouse;
