@@ -13,7 +13,8 @@ List<IPuzzleSolver> solvedPuzzles = [
     new Day05PuzzleSolver(),
     new Day06PuzzleSolver(),
     new Day07PuzzleSolver(),
-    new Day08PuzzleSolver()
+    new Day08PuzzleSolver(),
+    new Day09PuzzleSolver()
 ];
 
 foreach (var solver in solvedPuzzles)

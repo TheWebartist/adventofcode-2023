@@ -107,7 +107,8 @@
             int rank = handsEntries.Count;
             foreach (var handsEntry in handsEntries)
             {
-                Console.WriteLine($"hand {handsEntry.Hand} has {handsEntry.JokerCount} joker(s) so is a hand of type {handsEntry.HandType} (base of {GetHandTypeForHand(handsEntry.Hand)}) and  has rank n°{rank} (of {handsEntry.RankStr})");
+                // TODO: uncomment when back to this day (if I will come back like T-1000)
+                // Console.WriteLine($"hand {handsEntry.Hand} has {handsEntry.JokerCount} joker(s) so is a hand of type {handsEntry.HandType} (base of {GetHandTypeForHand(handsEntry.Hand)}) and  has rank n°{rank} (of {handsEntry.RankStr})");
                 result += handsEntry.Bid * rank;
                 rank--;
             }

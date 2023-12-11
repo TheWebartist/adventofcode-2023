@@ -29,6 +29,8 @@
     <None Remove="Inputs\08\input" />
     <None Remove="Inputs\08\sample-part-1" />
     <None Remove="Inputs\08\sample-part-2" />
+    <None Remove="Inputs\09\input" />
+    <None Remove="Inputs\09\sample" />
   </ItemGroup>
 
   <ItemGroup>
@@ -87,6 +89,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Inputs\08\sample-part-2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\09\input">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\09\sample">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
